@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strathmore University</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --blue: #002147; 
+      --red:  #be1e2d; 
+      --gold: #fdb913; 
+      --bg:   #f6f8fb; 
+      --text: #333;
+      --radius: 12px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--bg);
+    }
+
+    header {
+      background: var(--blue);
+      color: #fff;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    header img {
+      width: 72px;
+      border-radius: var(--radius);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+    }
+
+    section.card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    section.card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2 {
+      color: var(--blue);
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .school-title {
+      margin: 1.6rem 0 0.8rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .sces { color: var(--blue); }
+    .sbs  { color: var(--red);  }
+    .shss { color: var(--gold); }
+
+    .prog-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      min-width: 400px;
+    }
+    .prog-table thead tr { color: #fff; }
+    .table-sces thead tr { background: var(--blue); }
+    .table-sbs  thead tr { background: var(--red); }
+    .table-shss thead tr { background: var(--gold); color: #000; }
+
+    .prog-table th,
+    .prog-table td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e5ec;
+    }
+    .prog-table tbody tr:hover { background: #fafafa; }
+
+    ul { margin-left: 1.2rem; list-style: disc; }
+
+    footer {
+      background: var(--blue);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+      margin-top: 3rem;
+    }
+    address { font-style: normal; line-height: 1.6; }
+
+    @media (min-width: 768px) {
+      header h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_JC79MYl9DRuoHM0PANa8RRmy7ujv6ajOh6RXIkeYdGSZtuflSiWrjZJYK_5kPFoOQqs&usqp=CAU"
+      alt="Strathmore University Logo"
+    />
+    <h1>Strathmore University</h1>
+  </header>
+
+  <main>
+    <section id="vision" class="card">
+      <h2>Vision</h2>
+      <p>
+        To become a leading outcome-focused entrepreneurial research university,
+        providing quality education and generating solutions that drive
+        socio-economic development in Africa.
+      </p>
+    </section>
+
+    <section id="mission" class="card">
+      <h2>Mission</h2>
+      <p>
+        To serve the Kenyan society and the world by developing visionary
+        leaders who are ethical, lifelong learners and catalysts for change
+        through world-class teaching, research, and innovation.
+      </p>
+    </section>
+
+    <section id="schools" class="card">
+      <h2>Schools &amp; Programmes</h2>
+
+      <h3 class="school-title sces">School of Computing &amp; Engineering Sciences (SCES)</h3>
+      <table class="prog-table table-sces">
+        <thead><tr><th>Programmes</th></tr></thead>
+        <tbody>
+          <tr><td>Bachelor of Informatics &amp; Computer Science</td></tr>
+          <tr><td>Bachelor of Electrical &amp; Electronics Engineering</td></tr>
+          <tr><td>Bachelor of Science in Software Engineering</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="school-title sbs">Strathmore Business School (SBS)</h3>
+      <table class="prog-table table-sbs">
+        <thead><tr><th>Programmes</th></tr></thead>
+        <tbody>
+          <tr><td>Bachelor of Commerce</td></tr>
+          <tr><td>Master of Business Administration (MBA)</td></tr>
+          <tr><td>Executive Education Programmes</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="school-title shss">School of Humanities &amp; Social Sciences (SHSS)</h3>
+      <table class="prog-table table-shss">
+        <thead><tr><th>Programmes</th></tr></thead>
+        <tbody>
+          <tr><td>Bachelor of Arts in Communication</td></tr>
+          <tr><td>Bachelor of Arts in International Studies</td></tr>
+          <tr><td>Bachelor of Science in Development Studies</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="achievements" class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Ranked top private university in Kenya by Webometrics (2025).</li>
+        <li>Accredited by the Commission for University Education and ISO&nbsp;9001:2015 certified.</li>
+        <li>Over 40,000 alumni making impact across 60+ countries.</li>
+        <li>Centre for Sustainability Leadership awarded the 2024 Green Gown Award&nbsp;(Africa).</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Ongoing Projects</h2>
+
+      <h3 class="school-title sbs" style="margin-top:1rem">Academic &amp; Research</h3>
+      <ul>
+        <li>Digital Learning Initiative – expanding e-learning infrastructure and course offerings.</li>
+        <li>AI4D Africa Hub – a research collaboration on responsible AI for development.</li>
+        <li>Solar Micro-Grid Lab – pioneering renewable-energy micro-grid solutions.</li>
+      </ul>
+
+      <h3 class="school-title sbs" style="margin-top:1.2rem">Student-Centred</h3>
+      <ul>
+        <li>Strathmore Innovation &amp; Technology Park (iBizAfrica) expansion.</li>
+        <li>Green Campus Project – zero-waste and carbon-neutral campus by 2030.</li>
+        <li>Taita–Taveta Community Health Outreach – annual medical camp led by medical students.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      Strathmore University, Ole Sangale Road, Madaraka Estate, PO Box 59857-00200<br>
+      Nairobi, Kenya &nbsp;|&nbsp; Tel: +254&nbsp;(0)703-034000 &nbsp;|&nbsp; Email: info@strathmore.edu
+    </address>
+    <p style="margin-top:0.8rem">&copy; 2025 Strathmore University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
